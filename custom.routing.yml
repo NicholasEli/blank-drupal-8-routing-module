@@ -1,0 +1,6 @@
+custom.home:
+    path: /home
+    defaults: 
+        _controller: Drupal\custom\Controller\RoutingController::home
+    requirements:
+        _permission: 'access content'

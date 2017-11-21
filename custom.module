@@ -1,0 +1,21 @@
+<?php
+
+function custom_theme() {
+    $theme['home_page'] = [
+     	'variables' => ['name' => NULL],
+      	'template' => 'home_page'
+    ];
+
+    return $theme;
+}
+
+function custom_menu(){
+  $items = array();
+  $items['admin/config/system/custom'] = array(
+    'title' => 'Custom',
+    'description' => 'Configuration Custom',
+    'route_name' => 'custom.settings'
+  );
+  return $items;
+}
+
